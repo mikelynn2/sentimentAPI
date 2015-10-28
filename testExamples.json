@@ -1,0 +1,22 @@
+[
+	{"text":"Oh its got blue paint, I love that jeep", "score":"pos"},
+	{"text":"I like his raptor ford truck", "score":"pos"},
+	{"text":"Jeeps are the best trucks", "score":"pos"},
+	{"text":"That truck is pretty cool", "score":"pos"},
+	{"text":"that jeep isnt very good", "score":"neg"},
+	{"text":"I don't feel like going on the trip", "score":"neg"},
+	{"text":"I'm tired", "score":"neg"},
+	{"text":"I loved that new show on fox called the oriley factor", "score":"pos"},
+	{"text":"I ran out of budwiser, missing beer", "score":"neg"},
+	{"text":"I laughed, cried, had a great time", "score":"pos"},
+	{"text":"do you know where the gas station is", "score":"pos"},
+	{"text":"I can't believe that they were out of ding dongs", "score":"neg"},
+	{"text":"She didn't treat me very well", "score":"neg"},
+	{"text":"Its too hot out to go to the pool", "score":"neg"},
+	{"text":"That dog isn't very bright", "score":"neg"},
+	{"text":"She didn't like the way i sing movie songs", "score":"neg"},
+	{"text":"She didn't love that movie", "score":"neg"},
+	{"text":"He drove that car off a cliff", "score":"neg"},
+	{"text":"I like papa johns pizza but im not a fan of their drive delays", "score":"neg"}
+
+]
