@@ -13,15 +13,18 @@ sentimentAPI is a python based text sentiment analysis api that you can use to t
 - Fast, around 1500/second on a single core machine.
 - Trained on movie reviews - http://www.cs.cornell.edu/people/pabo/movie-review-data
 
+## FAQ
+- Memory required to compile scipy is around 2-3G.  Make sure you have at least that.
+
 
 ```
 # update repos
-apt-get update
+sudo apt-get -y update
 
 # install git
 sudo apt-get -y install git
 
-# install python stuff
+# install python and stuff python needs to compile packages
 sudo apt-get -y install python-dev python-pip libblas-dev liblapack-dev libatlas-base-dev gfortran
 
 # install python requirements
@@ -37,6 +40,7 @@ git clone https://github.com/mikelynn2/sentimentAPI.git
 
 
 #start it up
+cd /opt/sentimentAPI
 gunicorn -c gunicornSettings.py sentimentAPI:app
 
 
