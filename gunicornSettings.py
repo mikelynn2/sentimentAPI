@@ -10,6 +10,12 @@ workers = multiprocessing.cpu_count()
 
 backlog = 2048
 
+
+# if you want lightweight threads install gevent 
+# I haven't seen them be much faster
+# but install and then switch worker_class to gevent below
+#sudo pip install -U gevent
+
 worker_class = 'sync'
 #worker_class = 'eventlet'
 #worker_class = 'gevent'
@@ -34,4 +40,3 @@ daemon = True
 
 accesslog = 'access.log'
 errorlog = 'error.log'
-
