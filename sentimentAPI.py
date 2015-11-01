@@ -1,25 +1,5 @@
 #!/usr/bin/python
 '''
-#install stuff you need OSX
-sudo pip install -U numpy scipy scikit-learn
-sudo pip install -U sklearn
-sudo pip install -U cython falcon
-sudo pip install -U gunicorn
-#sudo pip install -U gevent
-
-#ubuntu
-sudo apt-get -y install python-dev python-pip git
-cd /home/
-#cd to wherever you want to keep this source code
-git clone git://github.com/scikit-learn/scikit-learn.git
-cd scikit-learn/
-#some other installs for math and pythong notebooks
-sudo apt-get -y install python-numpy python-scipy python-matplotlib python-pandas python-sympy python-nose
-sudo pip install -U pymysql
-sudo python setup.py build_ext --inplace
-sudo python setup.py install
-sudo pip install -U cython
-sudo pip install -U falcon gunicorn
 
 #start it up
 gunicorn -c gunicornSettings.py sentimentAPI:app
