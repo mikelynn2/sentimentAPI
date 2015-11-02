@@ -17,7 +17,7 @@ sentimentAPI is a python based text sentiment analysis api that you can use to t
 - Memory required to compile scipy is around 2-3G.  Make sure you have at least that.
 
 
-## Install
+## Install Ubuntu
 ```
 # update repos
 sudo apt-get -y update
