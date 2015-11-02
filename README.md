@@ -10,7 +10,7 @@ sentimentAPI is a python based text sentiment analysis api that you can use to t
 
 ## Features
 - Simple JSON Based API
-- Fast, around 1500/second on a single core machine.
+- Fast, around 1500/second on a single core machine (digital ocean $10/month)
 - Trained on movie reviews - http://www.cs.cornell.edu/people/pabo/movie-review-data
 
 ## Important
