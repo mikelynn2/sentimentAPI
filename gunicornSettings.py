@@ -10,19 +10,19 @@ workers = multiprocessing.cpu_count()
 
 backlog = 2048
 
-
-# if you want lightweight threads install gevent 
-# I haven't seen them be much faster
-# but install and then switch worker_class to gevent below
-#sudo pip install -U gevent
-
-worker_class = 'sync'
+'''
+using gevent for async
+performance seems 10-20% better under gevent then sync
+if you have problems with gevent, you can switch to sync by uncommenting 'sync'
+and commenting out "worker_class='gevent'" and "worker_connections"
+'''
+#worker_class = 'sync'
 #worker_class = 'eventlet'
-#worker_class = 'gevent'
-#worker_connections = 3000
+worker_class = 'gevent'
+worker_connections = 3000
 
-max_requests = 100000
-max_requests_jitter = 10000
+max_requests = 40000
+max_requests_jitter = 5000
 
 timeout = 30
 graceful_timeout = 30
@@ -35,8 +35,8 @@ limit_request_field_size = 8091
 
 preload_app = True
 
-#daemon = False
-daemon = True
+daemon = False
+#daemon = True
 
 accesslog = 'access.log'
 errorlog = 'error.log'

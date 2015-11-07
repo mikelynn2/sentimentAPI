@@ -17,6 +17,9 @@
 	{"text":"She didn't like the way i sing movie songs", "score":"neg"},
 	{"text":"She didn't love that movie", "score":"neg"},
 	{"text":"He drove that car off a cliff", "score":"neg"},
-	{"text":"I like papa johns pizza but im not a fan of their drive delays", "score":"neg"}
-
+	{"text":"I like papa johns pizza but im not a fan of their drive delays", "score":"neg"},
+	{"text":"I'm hoping next time we go we get to stay longer", "score":"neg"},
+	{"text":"Every time i answer the phone its a stupid telemarketer.", "score":"neg"},
+	{"text":"Thats a good color scheme on that house across the street.", "score":"pos"},
+	{"text":"The party was fun but i would have rather stayed home", "score":"neg"}
 ]

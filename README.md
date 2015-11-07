@@ -31,7 +31,7 @@ sudo apt-get -y install python-dev python-pip libblas-dev liblapack-dev libatlas
 # install python requirements
 export LC_ALL=C
 sudo pip install -U setuptools
-sudo pip install -U numpy scipy scikit-learn sklearn cython falcon gunicorn
+sudo pip install -U numpy scipy scikit-learn sklearn cython falcon gunicorn gevent
 
 # move to your install dir
 cd /opt
@@ -39,11 +39,9 @@ cd /opt
 # pull code
 git clone https://github.com/mikelynn2/sentimentAPI.git
 
-
 # start it up
 cd /opt/sentimentAPI
 gunicorn -c gunicornSettings.py sentimentAPI:app
-
 
 # simple test
 curl -H "Content-Type: application/json" -X POST -d '{"text":"how is it going?"}' http://127.0.0.1:8000/api/sentiment/v1
@@ -57,4 +55,4 @@ ab -p example.json -T application/json -c 10 -n 2000 http://127.0.0.1:8000/api/s
 ```
 
 ## Settings
-All settings are located in gunicornSettings.py
+All settings are located in gunicornSettings.py.  They mostly deal with the API serving
