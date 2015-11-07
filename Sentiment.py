@@ -133,7 +133,7 @@ class Sentiment(object):
 		if self.testMode:
 			from sklearn.metrics import accuracy_score
 			prediction = self.classifier.predict(train_vectors_valid)
-			self.logger("Accuracy Score: %{0}".format(accuracy_score(train_labels_valid, prediction) * 100) )
+			self.logger("Accuracy Score: {0}%".format(accuracy_score(train_labels_valid, prediction) * 100) )
 
 		# save out
 		self.save_trained()
