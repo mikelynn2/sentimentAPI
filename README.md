@@ -45,7 +45,7 @@ cd /opt/sentimentAPI
 gunicorn -c gunicornSettings.py sentimentAPI:app
 
 # simple test
-curl -H "Content-Type: application/json" -X POST -d '{"text":"how is it going?"}' http://127.0.0.1:8000/api/sentiment/v1
+curl -H "Content-Type: application/json" -X POST -d '{"text":"thats great!"}' http://127.0.0.1:8000/api/sentiment/v1
 
 # file json test
 curl -vX POST http://127.0.0.1:8000/api/sentiment/v1 -d @example.json --header "Content-Type: application/json"

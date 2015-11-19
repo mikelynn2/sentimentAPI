@@ -35,8 +35,9 @@ limit_request_field_size = 8091
 
 preload_app = True
 
-daemon = False
-#daemon = True
+#daemon = False
+daemon = True
 
 accesslog = 'access.log'
 errorlog = 'error.log'
+
